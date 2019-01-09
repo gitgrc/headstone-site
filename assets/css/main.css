@@ -8,6 +8,10 @@
 body,
 html {
   height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
   font-family: "Merriweather Sans", sans-serif;
 }
 
@@ -36,7 +40,7 @@ h4 {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  width: 100vw;
+  width: 100%;
 }
 
 #container-hero .nav-link a {
@@ -72,7 +76,7 @@ h4 {
 /* About Us */
 #container-aboutus {
   background: green;
-  width: 100vw;
+  width: 100%;
 }
 
 #container-aboutus img {
@@ -106,7 +110,7 @@ h4 {
 
 /* Customization */
 #container-customization {
-  width: 100vw;
+  width: 100%;
 }
 
 #container-customization .card {
@@ -137,7 +141,7 @@ h4 {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  width: 100vw;
+  width: 100%;
 }
 
 #container-messageus .form-control {
@@ -162,7 +166,7 @@ h4 {
 /* Footer */
 #container-footer {
   background: yellowgreen;
-  width: 100vw;
+  width: 100%;
 }
 
 #container-footer #footer-links {
