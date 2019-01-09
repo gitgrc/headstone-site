@@ -1,0 +1,188 @@
+/* General */
+* {
+  padding: 0;
+  margin: 0;
+  color: #f8f9fa;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 35px;
+  padding-top: 25px;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8rem;
+}
+
+h4 {
+  text-align: center;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8rem;
+}
+
+/* Hero  */
+#container-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/assets/images/bg-image.jpeg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100vw;
+}
+
+#container-hero .nav-link a {
+  color: #f8f9fa;
+  opacity: 1;
+}
+
+#container-hero .nav-link a:hover {
+  opacity: 1;
+}
+
+#container-hero .hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f8f9fa;
+  z-index: 0;
+}
+
+@media (max-width: 991px) {
+  #container-hero .hero-text {
+    margin-top: 175px;
+  }
+}
+
+#container-hero h1 {
+  font-size: 4.5rem;
+  padding-bottom: 25px;
+}
+
+/* About Us */
+#container-aboutus {
+  background: green;
+  width: 100vw;
+}
+
+#container-aboutus img {
+  display: block;
+  padding-bottom: 25px;
+}
+
+#container-aboutus p {
+  font-size: 1.2rem;
+}
+
+/* Services */
+#container-services {
+  background-image: url("/assets/images/granite-tile.jpeg");
+  background-repeat: repeat;
+  background-position: relative;
+  width: 100vw;
+}
+
+#container-services h4 {
+  text-align: center;
+}
+
+#container-services p {
+  font-size: 0.8rem;
+}
+
+#container-services i {
+  font-size: 4rem;
+}
+
+/* Customization */
+#container-customization {
+  width: 100vw;
+}
+
+#container-customization .card {
+  max-width: 350px;
+}
+
+/* Gallery */
+#container-gallery {
+  width: 100vw;
+}
+
+#container-gallery img {
+  display: block;
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+}
+
+#container-gallery .col-12 {
+  padding: 10px;
+}
+
+/* Message Us */
+#container-messageus {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/assets/images/custom-tile.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100vw;
+}
+
+#container-messageus .form-control {
+  margin: 15px 0;
+}
+
+#container-messageus .form-control::placeholder {
+  color: #f8f9fa;
+  opacity: 1;
+}
+
+#container-messageus .form-control-lg {
+  background: transparent;
+}
+
+#container-messageus .btn {
+  padding: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+}
+
+/* Footer */
+#container-footer {
+  background: yellowgreen;
+  width: 100vw;
+}
+
+#container-footer #footer-links {
+  min-height: 100px;
+}
+
+#container-footer a {
+  text-decoration: none;
+  color: #f8f9fa;
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 0.7rem;
+}
+
+#container-footer a:hover {
+  text-decoration: none;
+  opacity: 1;
+}
+
+#container-footer #footer-text {
+  min-height: 50px;
+}
