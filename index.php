@@ -55,7 +55,7 @@
                 <a href="#container-services" class="nav-link">Services</a>
               </li>
               <li class="nav-item">
-                <a href="#container-customization" class="nav-link">Customization</a>
+                <a href="#container-customization" class="nav-link">Options</a>
               </li>
               <li class="nav-item"><a href="#container-gallery" class="nav-link">Gallery</a></li>
               <li class="nav-item">
@@ -97,12 +97,9 @@
           <div class="card border-secondary text-white bg-dark mb-3">
             <div class="card-header text-center"><i class="fas fa-home"></i></div>
             <div class="card-body">
-              <h4 class="card-title">Home Visits</h4>
+              <h4 class="card-title">Availability</h4>
               <p class="card-text">
-                We know it can be difficult for some customers to get to us and
-                we are more than happy to come and visit you at your home or
-                work for a no obligation quote. Please contact us to make an
-                appointment.
+              When you cannot make it to us, we will make it to you. Our services provide an in home visit that include a no obligation quote. Please contact us to schedule an appointment. 
               </p>
             </div>
           </div>
@@ -110,12 +107,9 @@
           <div class="card border-secondary text-white bg-dark mb-3">
             <div class="card-header text-center"><i class="fas fa-cog"></i></div>
             <div class="card-body">
-              <h4 class="card-title">Bespoke</h4>
+              <h4 class="card-title">Head-Stone Designs</h4>
               <p class="card-text">
-                Our selection is not limited to items seen in our brochure and
-                showroom. Should you want something even more unique, our
-                specialists will design a beautiful and one-of-a-kind headstone
-                that will be a lasting memory of your loved one.
+              Our selection is not limited to what you see on our website. If you have a design or idea you would like to implement, we can work closely with you to make this happen. Our team specializes in making all of our head stones personal and unique for the lasting memory of your loved one.
               </p>
             </div>
           </div>
@@ -123,11 +117,9 @@
           <div class="card border-secondary text-white bg-dark mb-3">
             <div class="card-header text-center"><i class="fas fa-shipping-fast"></i></div>
             <div class="card-body">
-              <h4 class="card-title">Speedy Service</h4>
+              <h4 class="card-title">Service</h4>
               <p class="card-text">
-                We have general lead-times but if you need a headstone or
-                renovation completed before a specific date speak to us and we
-                will do our utmost to help.
+              Our team guarantees to provide the best possible service to all our customers. Should one need a stone done by a specific date and time you can let us know and we will do our best to make it happen.  
               </p>
             </div>
           </div>
@@ -139,7 +131,7 @@
     <div id="container-customization" class="bg-dark">
 
       <div class="container">
-        <h3>Customization</h3>
+        <h3>Options</h3>
 
         <div class="row">
           <div class="col-12 text-center">
@@ -266,12 +258,13 @@
     <div id="container-messageus">
       <div class="container">
         <h3>Message Us</h3>
-
-        <form action="">
-          <input type="text" class="form-control form-control-lg text-light border-light" placeholder="Name">
-          <input type="text" class="form-control form-control-lg text-light" placeholder="Email">
+        <h5 class="text-center text-success"><?= $result; ?></h5>
+        <form class="contact-form" action="contactform.php" method="post">
+          <input type="text" class="form-control form-control-lg text-light border-light" placeholder="Name" name="name" id="name">
+          <input type="text" class="form-control form-control-lg text-light" placeholder="Email" id="email" name="email">
+          <input type="text" class="form-control form-control-lg text-light border-light" placeholder="Phone Number" name="phone" id="phone">
           <textarea name="message" id="message" cols="30" rows="10" class="form-control form-control-lg text-light" placeholder="Message Us"></textarea>
-          <button class="btn btn-success btn-lg form-control" type="submit" value="Submit">Submit</button>
+          <button class="btn btn-success btn-lg form-control" type="submit" id="submit" name="submit">Submit</button>
         </form>
       </div>
     </div>
@@ -282,7 +275,7 @@
           <div class="col-12 col-lg-2 mx-auto my-auto text-center"><a href="#container-hero">Home</a></div>
           <div class="col-12 col-lg-2 mx-auto my-auto text-center"><a href="#container-aboutus">About Us</a></div>
           <div class="col-12 col-lg-2 mx-auto my-auto text-center"><a href="#container-services">Services</a></div>
-          <div class="col-12 col-lg-2 mx-auto my-auto text-center"><a href="#container-customization">Customization</a></div>
+          <div class="col-12 col-lg-2 mx-auto my-auto text-center"><a href="#container-customization">Options</a></div>
           <div class="col-12 col-lg-2 mx-auto my-auto text-center"><a href="#container-gallery">Gallery</a></div>
           <div class="col-12 col-lg-2 mx-auto my-auto text-center"><a href="#container-messageus">Message Us</a></div>
         </div>
@@ -295,10 +288,9 @@
 
     <!-- Bootstrap -->
     <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
       integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
@@ -309,8 +301,5 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
-
-    <!-- Custom Script -->
-    <script src="build/app.bundle.js"></script>
   </body>
 </html>
